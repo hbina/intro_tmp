@@ -1,5 +1,7 @@
 #pragma once
 
+#include "fraction.hpp"
+
 // We can use Euclid's algorithm to determine
 // the greatest common divisor of a fraction
 template <std::size_t X, std::size_t Y>
