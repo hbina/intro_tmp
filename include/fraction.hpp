@@ -2,17 +2,21 @@
 
 #include <cstddef>
 
+// Instead of just a single floating point value to represent reals.
+// We can instead represent a smaller set of real number, the rational numbers
+// which are represented by 2 integers.
+
 template <
-    std::size_t _P = 1u,
-    std::size_t _Q = 1u>
+    std::int64_t _P = 0,
+    std::int64_t _Q = 1>
 struct fraction
 {
-    static constexpr std::size_t P = _P;
-    static constexpr std::size_t Q = _Q;
+    static constexpr std::int64_t P = _P;
+    static constexpr std::int64_t Q = _Q;
 };
 
 template <
-    std::size_t N,
+    std::int64_t N,
     typename _LEFT>
 struct scalar_mult
 {
