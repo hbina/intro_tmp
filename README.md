@@ -19,3 +19,12 @@ For instance, algebraic operations on floating points are not commutative i.e. X
 But, there is a way, of course.
 
 Refer to [fraction.hpp](include/fraction.hpp)
+
+## Greatest Common Divisor (GCD)
+
+You can also use TMP to find the GCD given 2 values.
+If you want, you can specialize it to accept a `fraction`.
+The algorithm used is the Euclid's algorithm.
+This reminds me a lot of Prolog!
+
+Refer to [gcd.hpp](include/gcd.hpp)
